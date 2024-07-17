@@ -262,7 +262,7 @@ const ProjectsList = () => {
   return (
     <div className="flex flex-col gap-6 items-center justify-center w-full">
       {projects.map((project) => {
-        return <ProjectCard project={project} />;
+        return <ProjectCard key={project.title} project={project} />;
       })}
     </div>
   );
