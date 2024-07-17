@@ -172,7 +172,9 @@ const ProjectCard = ({ project }: { project: Project }) => {
         <p className="text-sm font-light">{project.description}</p>
         <div className="flex gap-2">
           {project.tech.map((item) => (
-            <p className="text-xs">{item}</p>
+            <p key={item} className="text-xs">
+              {item}
+            </p>
           ))}
         </div>
 
